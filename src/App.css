@@ -1,0 +1,128 @@
+.App {
+  text-align: center;
+}
+.container{
+  text-align: left;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.body {
+  font-family: 'Handlee', cursive;
+  font-size: 13pt;
+  background-color: #efefef;
+  padding: 10px;
+  margin: 0;
+}
+
+.h1 {
+  font-size: 15pt;
+  color: black;
+  text-align: center;
+  padding: 18px 0 18px 0;
+  margin: 0 0 10px 0;
+}
+
+.h1 span {
+  border: 4px groove black;
+  padding: 10px;
+}
+
+.img-circle {
+  border: 3px solid white;
+  border-radius: 50%;
+}
+
+.section {
+  background-color: #dae1ed;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+#header {
+  background-image: url("http://www.freeliquidtemplates.com/free-headers-for-websites/header13.jpg");
+  background-size: cover;
+}
+
+#header img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+}
+
+#header p {
+  font-size: 25pt;
+  color: white;
+  padding-top: 5px;
+  margin: 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.li {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.progress {
+  width: 70%;
+  height: 20px;
+  color: #3fb6b2;
+  background: #efefef;
+}
+
+.progress::-webkit-progress-bar {
+  background: #efefef;
+}
+
+.progress::-webkit-progress-value {
+  background: #3fb6b2;
+}
+
+.progress::-moz-progress-bar {
+  color: #3fb6b2;
+  background: #efefef;
+}
+
+#contacts img {
+  height: 50px;
+  width: 50px;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+#contacts a {
+  text-decoration: none;
+}
+
+#contacts img:hover {
+  opacity: 0.8;
+}
+
+#contacts {
+  text-align: center;
+}
