@@ -19,35 +19,10 @@ class Title extends Component{
     const { classes } = this.props;
     return (
       <div className="container">
-        <div id="header" className="section">
-          <img alt="" class="img-circle" src="http://bestvoyage.in/wp-content/uploads/profile.png" />
-          <p>Nawaf Alharby</p>
-        </div>
         <center>
-
-      <Typography variant="display2">
-          Hello again, I made some modifecations on the page, now you can navigate through the 
-          buttons below, Enjoy :)
-        </Typography>
-        <br/>
-        <br/>
-        <br/>
       <Card className={classes.Card}>
-      <NavLink to="/components/aboutMe" style={{ textDecoration: 'none' }}>
-      <Button variant="contained" size="large" color="primary" className={classes.button}>
-          Persional Info
-        </Button>
-        </NavLink>
-        <NavLink to="/components/mySkills" style={{ textDecoration: 'none' }}>
-      <Button variant="contained" size="large" color="primary" className={classes.button}>
-          My Skills
-        </Button>
-        </NavLink>
-        <NavLink to="/components/contactMe" style={{ textDecoration: 'none' }}>
-      <Button variant="contained" size="large" color="primary" className={classes.button}>
-          Contact Me
-        </Button>
-        </NavLink>
+
+      Hey There
         </Card>
         </center>
     </div>
@@ -55,3 +30,21 @@ class Title extends Component{
   }
 }
 export default withStyles(styles)(Title);
+
+/*
+<NavLink to="/components/aboutMe" style={{ textDecoration: 'none' }}>
+<Button variant="contained" size="large" color="primary" className={classes.button}>
+    Persional Info
+  </Button>
+  </NavLink>
+  <NavLink to="/components/mySkills" style={{ textDecoration: 'none' }}>
+<Button variant="contained" size="large" color="primary" className={classes.button}>
+    My Skills
+  </Button>
+  </NavLink>
+  <NavLink to="/components/contactMe" style={{ textDecoration: 'none' }}>
+<Button variant="contained" size="large" color="primary" className={classes.button}>
+    Contact Me
+  </Button>
+  </NavLink>
+  */
