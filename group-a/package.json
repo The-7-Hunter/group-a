@@ -1,8 +1,8 @@
 {
-  "name": "portfilo",
+  "name": "group-a",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://the-7-hunter.github.io/ReactPageNawaf/", 
+  "homepage": "https://the-7-hunter.github.io/group-a/", 
   "dependencies": {
     "@material-ui/core": "^1.4.3",
     "react": "^16.4.2",
