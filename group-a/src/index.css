@@ -18,8 +18,7 @@ body {
 }
 .aboutimg{
 	float: center;
-	margin-right: 50%;
-	margin-left: 50%;
+
 	
 }
 .aboutimgg{
@@ -30,9 +29,6 @@ width: 70%;
 	margin-right: 35%;
 	margin-left: 35%;
 	width: 100%;
-
-
-
 }
 .button {
 	background-color: #666666;

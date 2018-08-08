@@ -16,10 +16,6 @@ const styles = theme => ({
     height:100,
     backgroundColor:"#ffffff"
   },
-  Typography:{
-    backgroundColor: "#888",
-    color: "#888"
-  },
   media: {
     height: 10,
     paddingTop: '50.25%', // 16:9
@@ -33,10 +29,10 @@ class Title extends Component{
       <div className="container">
    
       <Card>
-      <AppBar position="static">
+      <AppBar position="static" color="default">
         <Toolbar>
     <img className={classes.img} src="https://preview.ibb.co/hXqdbK/cloud_logo.png"/>
-          <Typography variant="display2">
+          <Typography variant="display2" color="#ffffff">
         (Cloud Systems)  أنظمة غيمة
           </Typography>
           </Toolbar>

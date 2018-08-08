@@ -1,12 +1,29 @@
 import React, { Component } from "react";
-import { Card } from '@material-ui/core';
+import { Card, withStyles, Button } from '@material-ui/core';
 
+
+const styles = theme => ({
+    Card:{
+        margin: theme.spacing.unit,
+    },
+    button: {
+        margin: theme.spacing.unit,
+        width: 350,
+        backgroundColor: "#fff",
+        color:"#555",
+        justifyContent: "center"
+      },
+});
 class contactus extends Component {
-    render() {
+        render() {
+            const {classes} =this.props;
         return (
             <Card className="section" >
-            <img className="aboutimg" src="img/contact-us-icon.png" alt="" height="70" width="99" />
+            <Card>
+            <center>
+            <img className="aboutimg" src="img/contact-us-icon.png" />
             <div className="contact">
+    
             <h3 >تواصل معنا</h3>
             <h4>لا تتردد في ارسال البريد الإلكتروني </h4>
             <form>
@@ -21,11 +38,17 @@ class contactus extends Component {
             <input type="text" /><br />
 
             <label>الرسالة</label><br />
-            <textarea cols="40" rows="3"></textarea><br /><br />
+            <textarea cols="49" rows="4"></textarea><br /><br />
 
-            <input type="submit" className="button" value="ارسال" /><br /><br />           </form>
-
-
+             <Button variant="contained" size="large"  className={classes.button}>
+                إرسال
+            </Button>
+                <br /><br /></form>
+            </div>
+            </center>
+            </Card>
+            <Card>
+            <div className="contact">
             <h4>الهاتف &amp; البريد</h4>
             <p>+01 22112211</p>
             <p>fortydays@fortydays.com</p>
@@ -42,12 +65,12 @@ class contactus extends Component {
             <a href="#" className="fa fa-twitter"></a>
             <a href="#" className="fa fa-google"></a>
             <a href="#" className="fa fa-linkedin"></a>
-
-
             </div>
+            </Card>
+
             </Card>
             );
     }
 }
-export default contactus;
+export default withStyles(styles)(contactus);
 
