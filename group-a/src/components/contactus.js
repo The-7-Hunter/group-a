@@ -4,7 +4,7 @@ import { Card } from '@material-ui/core';
 class contactus extends Component {
     render() {
         return (
-            <Card className="section" id="contacts" >
+            <Card className="section" >
           Hey I am contactus
           </Card>
         );

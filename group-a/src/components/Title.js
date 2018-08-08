@@ -1,21 +1,25 @@
 import React, { Component } from "react";
-import {Button, Card, withStyles, Typography,AppBar,Toolbar} from '@material-ui/core';
+import {Button, Card, withStyles, Typography,AppBar,Toolbar, CardMedia,} from '@material-ui/core';
 import { NavLink } from "react-router-dom";
 
 const styles = theme => ({
     button: {
       margin: theme.spacing.unit,
       width: 150,
-      backgroundColor: "#151616",
-      color:"#ffffff"
+      backgroundColor: "#d1d1d1",
+      color:"#000000",
+      justifyContent: "flex-end"
     },
-  Card:{
-    backgroundColor: "#bec0c4",
-  },
   img:{
     margin: theme.spacing.unit,
-    width:100,
-  }
+    width:200,
+    height:100,
+    backgroundColor:"#ffffff"
+  },
+  media: {
+    height: 10,
+    paddingTop: '50.25%', // 16:9
+  },
   });
 
 class Title extends Component{
@@ -24,13 +28,12 @@ class Title extends Component{
     return (
       <div className="container">
    
-      <Card className={classes.Card}>
-      <AppBar position="static" color="default">
+      <Card>
+      <AppBar position="static">
         <Toolbar>
-        <img alt="" className={classes.img}  src="http://bestvoyage.in/wp-content/uploads/profile.png" />
-    
+    <img className={classes.img} src="https://preview.ibb.co/hXqdbK/cloud_logo.png"/>
           <Typography variant="display2" color="inherit">
-          أنظمة غيمة
+        (Cloud Systems)  أنظمة غيمة
           </Typography>
           </Toolbar>
           <center>
