@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import {
-    Card, Avatar, CardContent, CardMedia, Button, Typography, CardActions, withStyles,
-    Dialog, DialogTitle, DialogContent, TextField, DialogActions, DialogContentText
-} from '@material-ui/core';
+    Card, CardContent, CardMedia, Button, Typography, withStyles,
+    Dialog, DialogTitle, DialogContent, TextField, DialogActions,
+     DialogContentText, Radio, } from '@material-ui/core';
 
 
 
@@ -25,6 +25,7 @@ class home extends Component {
     state = {
         open: false,
         open1: false,
+        selectedValue: 'a',
     };
 
     handleClickOpen = () => {
@@ -35,12 +36,16 @@ class home extends Component {
     };
     handleClose = () => {
         this.setState({ open: false });
-        this.setState({ open1: false});
+        this.setState({ open1: false });
+    };
+    genderhandleChange = event => {
+        this.setState({ selectedValue: event.target.value });
     };
 
 
     render() {
         const { classes } = this.props;
+
         return (
             <center>
                 <div>
@@ -61,7 +66,7 @@ class home extends Component {
                         </CardContent>
 
                         <Button onClick={this.handleClickOpen} variant="contained" size="large" className={classes.button}>
-                        تسجيل الدخول
+                            تسجيل الدخول
         </Button>
                         <Dialog
                             open={this.state.open1}
@@ -74,22 +79,43 @@ class home extends Component {
 
                                 </DialogContentText>
                                 <TextField
-                                dir="rtl"
+                                    dir="rtl"
                                     autoFocus
                                     placeholder="الإسم"
                                 />
                                 <br />
                                 <TextField
-                                dir="rtl"
+                                    dir="rtl"
                                     autoFocus
                                     placeholder="البريد الإلكتروني"
                                 />
                                 <br />
                                 <TextField
-                                dir="rtl"
+                                    dir="rtl"
                                     autoFocus
                                     placeholder="رقم الجوال"
                                 />
+                                <br />
+                                <div>
+                                    ذكر
+        <Radio
+                                        dir="rtl"
+                                        checked={this.state.selectedValue === 'a'}
+                                        onChange={this.genderhandleChange}
+                                        value="a"
+                                        name="radio-button-demo"
+                                        aria-label="A"
+                                    />
+                                    انثى
+        <Radio
+                                        checked={this.state.selectedValue === 'b'}
+                                        onChange={this.genderhandleChange}
+                                        value="b"
+                                        name="radio-button-demo"
+                                        aria-label="B"
+                                    />
+                                </div>
+
                             </DialogContent>
                             <DialogActions>
                                 <Button onClick={this.handleClose} color="primary">
@@ -108,7 +134,7 @@ class home extends Component {
                             تسجيل
         </Button>
 
-        <Dialog
+                        <Dialog
                             open={this.state.open}
                             onClose={this.handleClose}
 
@@ -119,13 +145,13 @@ class home extends Component {
 
                                 </DialogContentText>
                                 <TextField
-                                dir="rtl"
+                                    dir="rtl"
                                     autoFocus
                                     placeholder="البريد الإلكتروني"
                                 />
                                 <br />
                                 <TextField
-                                dir="rtl"
+                                    dir="rtl"
                                     autoFocus
                                     placeholder="كلمة المرور"
                                 />
@@ -135,7 +161,7 @@ class home extends Component {
                                     إلغاء
             </Button>
                                 <Button onClick={this.handleClose} color="primary">
-                                تسجيل دخول
+                                    تسجيل دخول
             </Button>
                             </DialogActions>
                         </Dialog>
