@@ -37,7 +37,10 @@ const styles = theme => ({
   },
   bkground:{
     backgroundColor: "#754b4b"
-}
+  },
+  paper1:{
+      maxWidth:600
+  },
 });
 
 
@@ -51,13 +54,14 @@ class sumtrain extends Component {
           <div className={classes.bkground}>
            <Grid container spacing={24}>
            <Grid item xs={12} sm={6}>
+
            <center>
            <br/>
            <br/>
            <br/>
            <br/>
            <div>
-                 <Paper className={classes.root} elevation={1}>
+                 <Paper className={classes.root} className={classes.paper1} elevation={1}>
                    <Typography variant="display1" component="h3">
                      برنامج التدريب الصيفي
                    </Typography>
@@ -69,6 +73,8 @@ class sumtrain extends Component {
                    <Button variant="contained" color="secondary" className={classes.button}>
                    إنضم إلينا
                    </Button>
+                   <br/>
+                   <br/>
                  </Paper>
                </div>
             </center>
