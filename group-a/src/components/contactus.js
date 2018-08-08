@@ -23,9 +23,8 @@ class contactus extends Component {
             <center>
             <img className="aboutimg" src="img/contact-us-icon.png" />
             <div className="contact">
-    
-            <h3 >تواصل معنا</h3>
-            <h4>لا تتردد في ارسال البريد الإلكتروني </h4>
+            <h3 className="cent">تواصل معنا</h3>
+            <h4 className="cent">لا تتردد في ارسال البريد الإلكتروني </h4>
             <form>
 
             <label> * الأسم</label><br />
@@ -49,16 +48,16 @@ class contactus extends Component {
             </Card>
             <Card>
             <div className="contact">
-            <h4>الهاتف &amp; البريد</h4>
-            <p>+01 22112211</p>
-            <p>fortydays@fortydays.com</p>
+            <h4 className="cent">الهاتف &amp; البريد</h4>
+            <p className="cent">+01 22112211</p>
+            <p className="cent">fortydays@fortydays.com</p>
 
-            <h4>ساعات العمل</h4>
-            <p>من السبت الى الاثنين - 8am to 5pm</p>
-            <p>الجمعه - مغلق</p>
+            <h4 className="cent">ساعات العمل</h4>
+            <p className="cent">من السبت الى الاثنين - 8am to 5pm</p>
+            <p className="cent">الجمعه - مغلق</p>
 
-            <h4>عنوان المكتب</h4>
-            <p>السعودية - الرياض - حي النسيم - طريق عين بن ريم</p><br /><br />
+            <h4 className="cent">عنوان المكتب</h4>
+            <p className="cent">السعودية - الرياض - حي النسيم - طريق عين بن ريم</p><br /><br />
 
 
             <a href="#" className="fa fa-facebook"></a>
