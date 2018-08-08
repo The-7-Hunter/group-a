@@ -1,16 +1,20 @@
 import React, { Component } from "react";
-import {Button, Card, withStyles, Typography} from '@material-ui/core';
+import {Button, Card, withStyles, Typography,AppBar,Toolbar} from '@material-ui/core';
 import { NavLink } from "react-router-dom";
 
 const styles = theme => ({
     button: {
       margin: theme.spacing.unit,
-      width: 250,
-      height: 70,
+      width: 150,
       backgroundColor: "#151616",
+      color:"#ffffff"
     },
   Card:{
     backgroundColor: "#bec0c4",
+  },
+  img:{
+    margin: theme.spacing.unit,
+    width:100,
   }
   });
 
@@ -19,32 +23,53 @@ class Title extends Component{
     const { classes } = this.props;
     return (
       <div className="container">
-        <center>
+   
       <Card className={classes.Card}>
+      <AppBar position="static" color="default">
+        <Toolbar>
+        <img alt="" className={classes.img}  src="http://bestvoyage.in/wp-content/uploads/profile.png" />
+    
+          <Typography variant="display2" color="inherit">
+          أنظمة غيمة
+          </Typography>
+          </Toolbar>
+          <center>
+            <NavLink to="/components/home" style={{ textDecoration: 'none' }}>
+        <Button variant="contained" size="large" className={classes.button}>
+          الرئيسية
+        </Button>
+        </NavLink>
 
-      Hey There
-        </Card>
+        <NavLink to="/components/sumtrain" style={{ textDecoration: 'none' }}>
+        <Button variant="contained" size="large"  className={classes.button}>
+          برنامج التدريب 
+        </Button>
+        </NavLink>
+
+        <NavLink to="/components/missions" style={{ textDecoration: 'none' }}>
+        <Button variant="contained" size="large"  className={classes.button}>
+          المهمام
+        </Button>
+        </NavLink>
+
+        <NavLink to="/components/aboutus" style={{ textDecoration: 'none' }}>
+        <Button variant="contained" size="large"  className={classes.button}>
+          من نحن ؟
+        </Button>
+        </NavLink>
+        
+        <NavLink to="/components/contactus" style={{ textDecoration: 'none' }}>
+        <Button variant="contained" size="large" className={classes.button}>
+          تواصل معنا
+        </Button>
+        </NavLink>
         </center>
+      </AppBar>
+        </Card>
+     
     </div>
     );
   }
 }
 export default withStyles(styles)(Title);
 
-/*
-<NavLink to="/components/aboutMe" style={{ textDecoration: 'none' }}>
-<Button variant="contained" size="large" color="primary" className={classes.button}>
-    Persional Info
-  </Button>
-  </NavLink>
-  <NavLink to="/components/mySkills" style={{ textDecoration: 'none' }}>
-<Button variant="contained" size="large" color="primary" className={classes.button}>
-    My Skills
-  </Button>
-  </NavLink>
-  <NavLink to="/components/contactMe" style={{ textDecoration: 'none' }}>
-<Button variant="contained" size="large" color="primary" className={classes.button}>
-    Contact Me
-  </Button>
-  </NavLink>
-  */
