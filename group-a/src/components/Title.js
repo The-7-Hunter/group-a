@@ -6,8 +6,8 @@ const styles = theme => ({
     button: {
       margin: theme.spacing.unit,
       width: 150,
-      backgroundColor: "#d1d1d1",
-      color:"#000000",
+      backgroundColor: "#fff",
+      color:"#555",
       justifyContent: "flex-end"
     },
   img:{
@@ -15,6 +15,10 @@ const styles = theme => ({
     width:200,
     height:100,
     backgroundColor:"#ffffff"
+  },
+  Typography:{
+    backgroundColor: "#888",
+    color: "#888"
   },
   media: {
     height: 10,
@@ -32,7 +36,7 @@ class Title extends Component{
       <AppBar position="static">
         <Toolbar>
     <img className={classes.img} src="https://preview.ibb.co/hXqdbK/cloud_logo.png"/>
-          <Typography variant="display2" color="inherit">
+          <Typography variant="display2">
         (Cloud Systems)  أنظمة غيمة
           </Typography>
           </Toolbar>
