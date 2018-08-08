@@ -6,15 +6,14 @@ const styles = theme => ({
     button: {
       margin: theme.spacing.unit,
       width: 150,
-      backgroundColor: "#fff",
-      color:"#555",
+      backgroundColor: "#343434ff",
+      color:"#c6c6c6",
       justifyContent: "flex-end"
     },
   img:{
     margin: theme.spacing.unit,
     width:200,
-    height:100,
-    backgroundColor:"#ffffff"
+    height:150,
   },
   media: {
     height: 10,
@@ -23,6 +22,16 @@ const styles = theme => ({
   adminbtn:{
     width:210,
     justifyContent:"right"
+  },
+  bkground:{
+    backgroundColor:"#ffffff",
+  
+  },
+  Typography:{
+    color:"#ffffff",
+  },
+  btnheader:{
+    backgroundColor:"#4e4e4eff"
   }
   });
 
@@ -30,13 +39,13 @@ class Title extends Component{
  render() {
     const { classes } = this.props;
     return (
-      <div className="container">
+      <div className={classes.bkground}>
    
       <Card>
-      <AppBar position="static" color="default">
-        <Toolbar>
-    <img className={classes.img} src="https://preview.ibb.co/hXqdbK/cloud_logo.png"/>
-          <Typography variant="display2" color="#ffffff">
+      <AppBar className={classes.bkground} position="static">
+        <Toolbar className="backgr">      
+    <img className={classes.img} src="https://preview.ibb.co/kjtUGK/logo.png"/>
+          <Typography variant="display2"color="textPrimary" >
         (Cloud Systems)  أنظمة غيمة
         <NavLink to="/components/admin" style={{ textDecoration: 'none' }}>
         <Button className={classes.adminbtn} color="primary">
@@ -46,6 +55,7 @@ class Title extends Component{
               </Typography>
           </Toolbar>
           <center>
+           <div className={classes.btnheader}> 
             <NavLink to="/components/home" style={{ textDecoration: 'none' }}>
         <Button variant="contained" size="large" className={classes.button}>
           الرئيسية
@@ -75,7 +85,9 @@ class Title extends Component{
           تواصل معنا
         </Button>
         </NavLink>
+        </div>
         </center>
+        
       </AppBar>
         </Card>
      

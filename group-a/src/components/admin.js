@@ -11,7 +11,7 @@ const styles = theme => ({
       justifyContent: "flex-end"
     },
     bkground:{
-        backgroundColor: "#754b4b"
+        backgroundColor: "#87e8e8ff"
     }
   });
 
@@ -64,7 +64,10 @@ const styles = theme => ({
     <br/>
     <br/>
     <br/>
-
+    <br/>
+    <br/>
+    <br/>
+           <br/>
     </div>
        );
      }

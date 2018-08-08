@@ -37,7 +37,7 @@ const styles = theme => ({
    display: 'none',
  },
 bkground:{
-    backgroundColor: "#754b4b"
+  backgroundColor: "#87e8e8ff",
 },
 
 }); 

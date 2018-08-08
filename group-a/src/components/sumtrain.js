@@ -36,7 +36,7 @@ const styles = theme => ({
     maxHeight: '100%',
   },
   bkground:{
-    backgroundColor: "#754b4b"
+    backgroundColor: "#87e8e8ff"
   },
   paper1:{
       maxWidth:600

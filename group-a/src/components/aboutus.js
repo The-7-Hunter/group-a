@@ -14,7 +14,7 @@ import aboutus1 from './aboutus.jpg';
 const styles = theme => ({
   root: {
     flexGrow: 1,
-    maxWidth: 600,
+    maxWidth: 800,
     padding: theme.spacing.unit * 2,
     margin:theme.spacing.unit,
 
@@ -36,7 +36,7 @@ const styles = theme => ({
    display: 'none',
  },
 bkground:{
-    backgroundColor: "#754b4b"
+    backgroundColor: "#87e8e8ff"
 },
 
 });

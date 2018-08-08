@@ -17,11 +17,11 @@ const styles = theme => ({
     button: {
         margin: theme.spacing.unit,
         width: 200,
-        backgroundColor: "#fff",
-        color: "#555",
+        backgroundColor: "#343434ff",
+        color: "#ffffff",
     },
     bkground:{
-        backgroundColor: "#754b4b"
+        backgroundColor: "#87e8e8ff"
     }
 });
 class home extends Component {
