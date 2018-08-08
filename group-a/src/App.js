@@ -7,6 +7,7 @@ import missions from './components/missions';
 import sumtrain from './components/sumtrain';
 import { Route } from "react-router-dom";
 import './App.css';
+import admin from './components/admin';
 
 
 class App extends Component {
@@ -19,7 +20,8 @@ class App extends Component {
     <Route  path="/components/home" component={home}/>
     <Route  path="/components/missions" component={missions}/>
     <Route  path="/components/sumtrain" component={sumtrain}/>
-  
+    <Route  path="/components/admin" component={admin}/>
+
 
           
   </div>
