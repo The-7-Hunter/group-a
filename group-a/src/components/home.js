@@ -20,6 +20,9 @@ const styles = theme => ({
         backgroundColor: "#fff",
         color: "#555",
     },
+    bkground:{
+        backgroundColor: "#754b4b"
+    }
 });
 class home extends Component {
     state = {
@@ -47,9 +50,10 @@ class home extends Component {
         const { classes } = this.props;
 
         return (
-            <center>
-                <div>
+            <center >
+                <div className={classes.bkground}>
                     <br />
+                    <br /> <br />
                     <br />
                     <Card className={classes.card} dir="rtl">
                         <CardMedia
@@ -173,6 +177,11 @@ class home extends Component {
                     <br />
                     <br />
                     <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    
                 </div>
             </center>
         );

@@ -20,6 +20,10 @@ const styles = theme => ({
     height: 10,
     paddingTop: '50.25%', // 16:9
   },
+  adminbtn:{
+    width:210,
+    justifyContent:"right"
+  }
   });
 
 class Title extends Component{
@@ -34,7 +38,12 @@ class Title extends Component{
     <img className={classes.img} src="https://preview.ibb.co/hXqdbK/cloud_logo.png"/>
           <Typography variant="display2" color="#ffffff">
         (Cloud Systems)  أنظمة غيمة
-          </Typography>
+        <NavLink to="/components/admin" style={{ textDecoration: 'none' }}>
+        <Button className={classes.adminbtn} color="primary">
+        عضو من أعضاء المؤسسة؟ إضغط هنا
+        </Button>
+        </NavLink>
+              </Typography>
           </Toolbar>
           <center>
             <NavLink to="/components/home" style={{ textDecoration: 'none' }}>
@@ -51,7 +60,7 @@ class Title extends Component{
 
         <NavLink to="/components/missions" style={{ textDecoration: 'none' }}>
         <Button variant="contained" size="large"  className={classes.button}>
-          المهمام
+          المهام
         </Button>
         </NavLink>
 

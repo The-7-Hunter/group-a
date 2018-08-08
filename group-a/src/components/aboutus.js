@@ -3,19 +3,22 @@ import { Card, withStyles } from '@material-ui/core';
 
 const styles = theme => ({
     subcard: {
-        padding: 20,
+        backgroundColor: "#754b4b",
         justifyContent: "left"
     },
     Card:{
         margin: theme.spacing.unit,
-    }
-
+        backgroundColor: "#754b4b",
+    },
+    bkground:{
+        backgroundColor: "#754b4b"
+    },
 });
 class aboutus extends Component {
     render() {
         const { classes } = this.props;
         return (
-             <Card className="section">
+            <div className={classes.bkground}>
              <center>
              <Card className={classes.subcard}>
             <img alt="About Us" className="aboutimgg" src="/img/aboutus.jpg" />
@@ -39,7 +42,8 @@ class aboutus extends Component {
 </Card>
 <br/>
 <br/>
-            </Card>
+
+            </div>
         );
     }
 }

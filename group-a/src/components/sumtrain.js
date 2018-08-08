@@ -35,6 +35,9 @@ const styles = theme => ({
     maxWidth: '100%',
     maxHeight: '100%',
   },
+  bkground:{
+    backgroundColor: "#754b4b"
+}
 });
 
 
@@ -45,6 +48,7 @@ class sumtrain extends Component {
             const message2 = 'نضع بين يدي المتدرّب 9 مسارات مختلفة، يتعلّم منها شيئًا جديدًا، يستكشفُ نفسه من خلالها، ويحلّل ويطوّر أنظمةً ويضمن توفّرها، ثمّ يختبرها، ويعثر على ثغراتها، إضافةً إلى مواضيع أخرى.';
             const message3 = 'نقدّم تدريبًا مكثّفًا في فترةٍ وجيزةٍ للذكور والإناث، ومن خلال الإنترنت فقط (عن بُعد)، يتحدّى فيها المتدرّب نفسه، وينظّم وقته، ويعرف مدى التزامه من عدمه. نضمن تجربةً فريدةً لا يُمكن لها أن تُنسى.'
         return (
+          <div className={classes.bkground}>
            <Grid container spacing={24}>
            <Grid item xs={12} sm={6}>
            <center>
@@ -125,7 +129,7 @@ class sumtrain extends Component {
               </div>
           </Grid>
           </Grid>
-
+          </div>
         );
     }
 

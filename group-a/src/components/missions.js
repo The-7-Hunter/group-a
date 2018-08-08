@@ -17,6 +17,8 @@ const styles = theme => ({
     flexGrow: 1,
     maxWidth: 600,
     padding: theme.spacing.unit * 2,
+    margin:theme.spacing.unit,
+
   },
   image: {
     width: 128,
@@ -34,14 +36,16 @@ const styles = theme => ({
  input: {
    display: 'none',
  },
-});
+bkground:{
+    backgroundColor: "#754b4b"
+},
 
-
-
+}); 
 class missions extends Component {
     render() {
       const { classes } = this.props;
         return (
+          <div className={classes.bkground}>
             <center>
             <br/>
             <br/>
@@ -74,6 +78,10 @@ class missions extends Component {
                 </Grid>
               </Paper>
               </center>
+              <br/>
+              <br/>
+              <br/>
+              </div>
         );
     }
 }
