@@ -5,46 +5,51 @@
 }
 
 .about{
-	padding-top: 50px;
-	margin: auto;
-	text-align: right;
-	width: 60%;
+  padding-top: 50px;
+  margin: auto;
+  text-align: right;
+  width: 60%;
 }
 
 .aboutp{
-	text-align: right;
-	margin:auto;
-	width: 60%;
+  text-align: right;
+  margin:auto;
+  width: 60%;
 }
 .aboutimg{
-	float: center;
+  float: center;
 
-	
+  
 }
 .cent{
   text-align: center;
 }
+.send{
+  margin-right: 50%;
+  margin-left: 50%;
+}
 .aboutimgg{
-width: 50%;
+width: 70%;
 }
 .contact{
-	text-align: right;
-	margin-right: auto;
+  text-align: right;
+  margin-right: auto;
   margin-left: auto;
-	width: 100%;
+  width: 100%;
+  background-color: #754b4b,
 }
 form{
   margin-right: 40%;
 }
 .button {
-	background-color: #666666;
-	border: none;
-	color: white;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
+  background-color: #666666;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 input[type=text] {
     width: 30%;
@@ -71,6 +76,7 @@ input[type=text]:focus {
 }
 
 .fa-facebook {
+  margin-right: 45%;
   background: #3B5998;
   color: white;
 }
