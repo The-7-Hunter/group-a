@@ -6,8 +6,8 @@ const styles = theme => ({
     button: {
       margin: theme.spacing.unit,
       width: 150,
-      backgroundColor: "#fff",
-      color:"#555",
+      backgroundColor: "#343434ff",
+      color:"#c6c6c6",
       justifyContent: "flex-end"
     },
     bkground:{
